@@ -3,9 +3,15 @@
 var randomContent;
 var content;
 content = document.querySelector("body");
-function print(styling, output) {
+function write(output, styling) {
 	if (typeof styling === "string" && typeof output === "string" && styling !== "" && output !== "") {
 		content.innerHTML += `<p style = "` + styling +`">` + output + `</p>`
+	} else if (styling === undefined && typeof output === "string" && output !== "") {
+		content.innerHTML += `<p>` + content + `</p>`;
+	} else if (output === undefined) {
+		alert("SyntaxError: output must be defined in print()");
+	} else if (output === undefined && styling === undefined) {
+		alert("SyntaxError: at least one argument must be given in print()");
 	}
 }
 function hello(outPutEnvironment) {
@@ -25,7 +31,7 @@ function hello(outPutEnvironment) {
 		alert("SyntaxError: output environment must be a specified string.");
 	}
 }
-function echo(output) {
+function print(output) {
 	content.innerHTML += `<p>` + output + `</p>`;
 }
 function random(arrayName) {

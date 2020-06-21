@@ -23,9 +23,9 @@ strong {
 }
 
 hr {
-	width: 90%;
+	width: 100%;
 	height: 4px;
-	margin: 0;
+	margin: 2px 0 2px 0;
 	background-color: #40274c;
 	color: #40274c;
 	box-shadow: none;
@@ -38,6 +38,7 @@ main {
 }
 div#content {
 	flex-basis: 70%;
+	padding-right: 2.25%;
 }
 nav {
 	flex-basis: 27.5%;
@@ -46,6 +47,7 @@ nav {
 	flex-wrap: wrap;
 	text-align: center;
 	padding-top: 1rem;
+	max-height: 7rem;
 }
 nav a {
 	flex-basis: 90%;
