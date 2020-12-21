@@ -78,6 +78,9 @@ p.d {
 	padding: 0px;
 	margin: 0px 0px 0px 0px;
 }
+span.struck {
+  text-decoration: line-through;
+}
 /* cyrillic-ext */
 @font-face {
   font-family: 'Fira Code';
